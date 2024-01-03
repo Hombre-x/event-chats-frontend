@@ -1,0 +1,26 @@
+@use 'sass:math'
+  
+$perfect-fourth: math.div(4, 3)
+$perfect-fifth: math.div(3, 2)
+$perfect-ratio: math.div((1 + math.sqrt(5)), 2)
+
+h1
+  font-size: math.pow($perfect-fourth, 6) * 1em
+
+h2
+  font-size: math.pow($perfect-fourth, 5) * 1em
+
+h3
+  font-size: math.pow($perfect-fourth, 4) * 1em
+  
+h4
+  font-size: math.pow($perfect-fourth, 3) * 1em
+
+h5
+  font-size: math.pow($perfect-fourth, 2) * 1em
+
+h6
+  font-size: math.pow($perfect-fourth, 1) * 1em
+
+p
+  font-size: 1em
