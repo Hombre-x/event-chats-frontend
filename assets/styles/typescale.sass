@@ -4,6 +4,11 @@ $perfect-fourth: math.div(4, 3)
 $perfect-fifth: math.div(3, 2)
 $perfect-ratio: math.div((1 + math.sqrt(5)), 2)
 
+@function perfect-fourth-typescale($level)
+  @return 1em * math.pow($perfect-fourth, $level)
+
+   
+
 h1
   font-size: math.pow($perfect-fourth, 6) * 1em
 
@@ -24,3 +29,5 @@ h6
 
 p
   font-size: 1em
+
+
