@@ -1,13 +1,18 @@
 <template>
-  <div>
-    <h4>Anonimous giraffe</h4>
+  <div class="user-info">
+    <UserInfoAvatar :size="70" />
+    <UserInfoName :font-level="2" />
   </div>
 </template>
 
-<script lang="ts" setup>
+<script lang="ts" setup></script>
 
-</script>
+<style lang="sass">
 
-<style>
-
+.user-info
+  display: inline-flex
+  flex-direction: row
+  align-items: center
+  justify-content: flex-start
+  gap: 16px
 </style>
