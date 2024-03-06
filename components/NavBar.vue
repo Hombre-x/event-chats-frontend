@@ -1,38 +1,52 @@
 <template>
   <nav>
     <ul>
-      <li><ButtonLogin id="btn-signup">Sign Up</ButtonLogin></li>
-      <li><ButtonLogin id="btn-login">Log In</ButtonLogin></li>
+      <li>
+        <NuxtLink to="/">Home</NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="/about">About</NuxtLink>
+      </li>
+      <li class="login-container">
+        <ButtonBase id="btn-signup">Sign Up</ButtonBase>
+        <ButtonBase id="btn-login">Log In</ButtonBase>
+      </li>
     </ul>
   </nav>
 </template>
 
-<script lang="ts" setup>
-
-</script>
+<script lang="ts" setup></script>
 
 <style lang="sass">
 
-  @import '/assets/styles/colours'
+@import '/assets/styles/colours'
 
-  nav
+nav
+  ul
+    display: flex
+    flex-direction: row
+    justify-content: flex-end
+    align-items: center
+    list-style: none
+    margin: 0
+    padding: 0
 
-    ul
-      display: flex
-      justify-content: space-around
-      align-items: center
-      list-style: none
-      padding: 0
-      margin: 0
-      
+    gap: 16px
 
-  #btn-signup
-    background-color: $secondary-colour
-    border: 5px solid $secondary-colour
-    color: $text-colour
 
-  #btn-login
-    border: 5px solid $primary-colour
-    color: $primary-colour
+.login-container
+  display: flex
+  justify-content: space-around
+  align-items: center
+  gap: 16px
 
+
+#btn-signup
+  background-color: $accent-colour
+  border: 3px solid $accent-colour
+  color: $text-colour
+
+#btn-login
+  border: 3px solid $accent-colour
+  color: $accent-colour
 </style>
