@@ -25,3 +25,6 @@ logs
 
 # Scala files
 target
+
+# pnpm
+pnpm-lock.yaml
