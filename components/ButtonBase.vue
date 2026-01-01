@@ -15,8 +15,8 @@ const emitClick = (payload: MouseEvent): void => {
 <style lang="sass" scoped>
 
 @use 'sass:math'
-@import '/assets/styles/colours'
-@import '/assets/styles/typescale'
+@use '/assets/styles/colours' as *
+@use '/assets/styles/typescale' as *
 
 button
 

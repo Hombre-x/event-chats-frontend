@@ -14,18 +14,24 @@
       stroke="#E5E8EB"
       stroke-width="3"
     />
-    <image
-      :href="avatarSvg"
-      x="3.5"
-      y="3.5"
-      :height="props.size - 3"
-      :width="props.size - 3"
-    />
+
+    <Avatar 
+      :size="props.size"
+      :name="props.name"
+      :square="props.square"
+      :variant="props.variant"
+      :colors="props.colors"
+      />
+      
   </svg>
 </template>
 
-<script lang="ts" setup>
+<script lang="tsx" setup>
 import { boringAvatarUrl } from "~/src/user/info/boring-avatar"
+import { applyReactInVue } from "veaury"
+import type { DefineComponent } from 'vue'
+
+import AvatarReact from 'boring-avatars'
 
 interface AvatarProps {
   size?: number
@@ -34,6 +40,8 @@ interface AvatarProps {
   variant?: "marble" | "beam" | "pixel" | "sunset" | "ring" | "bauhaus"
   colors?: string[]
 }
+
+const Avatar = applyReactInVue(AvatarReact) as DefineComponent<AvatarProps>
 
 const props = withDefaults(defineProps<AvatarProps>(), {
   size: 40,
@@ -56,4 +64,8 @@ const avatarSvg = boringAvatarUrl(
 )
 </script>
 
-<style></style>
+<style lang="sass">
+
+    
+
+</style>

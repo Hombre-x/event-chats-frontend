@@ -12,8 +12,8 @@
 
 <style lang="sass">
 
-@import '/assets/styles/colours'
-@import '/assets/styles/typescale'
+@use '/assets/styles/colours' as *
+@use '/assets/styles/typescale' as *
 
 .logo-container
   display: flex

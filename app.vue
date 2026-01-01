@@ -7,5 +7,5 @@
 </template>
 
 <style lang="sass">
-@import "assets/styles/default.sass"
+@use "assets/styles/default.sass" as *
 </style>

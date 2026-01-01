@@ -10,7 +10,7 @@
 
 <style lang="sass" scoped>
 
-@import '/assets/styles/colours'
+@use '/assets/styles/colours' as *
 
 div
   background: $background-accent

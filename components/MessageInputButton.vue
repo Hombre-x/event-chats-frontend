@@ -37,7 +37,7 @@ const emitSendMessage = (): void => {
 
 <style lang="sass" scoped>
 
-@import '/assets/styles/colours'
+@use '/assets/styles/colours' as *
 
 .message-input-button
   all: unset

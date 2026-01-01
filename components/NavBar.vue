@@ -19,7 +19,7 @@
 
 <style lang="sass">
 
-@import '/assets/styles/colours'
+@use '/assets/styles/colours' as *
 
 nav
   ul

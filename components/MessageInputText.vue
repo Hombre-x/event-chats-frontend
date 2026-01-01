@@ -20,7 +20,7 @@ const emitSendMessage = (payload: KeyboardEvent): void => {
 </script>
 
 <style lang="sass">
-@import '/assets/styles/colours'
+@use '/assets/styles/colours' as *
 
 $height: 50px
 

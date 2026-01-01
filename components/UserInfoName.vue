@@ -20,7 +20,7 @@ const theme = {
 
 <style lang="sass">
 
-@import '/assets/styles/typescale'
+@use '/assets/styles/typescale' as *
 
 .user-info-name
   font-size: v-bind("theme.fontSize")
