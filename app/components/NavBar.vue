@@ -7,10 +7,11 @@
       <li>
         <NuxtLink to="/about">About</NuxtLink>
       </li>
-      <li class="login-container">
+      <!-- TODO: Uncomment when login functionality is ready on the backend -->
+      <!-- <li class="login-container">
         <ButtonBase id="btn-signup">Sign Up</ButtonBase>
         <ButtonBase id="btn-login">Log In</ButtonBase>
-      </li>
+      </li> -->
     </ul>
   </nav>
 </template>
