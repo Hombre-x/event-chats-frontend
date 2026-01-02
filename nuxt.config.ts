@@ -16,4 +16,8 @@ export default defineNuxtConfig({
       "Rethink Sans": true,
     },
   },
+
+  plugins: [  
+    '~/plugins/veaury.client.ts'  
+  ] 
 })
