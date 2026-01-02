@@ -3,8 +3,8 @@
 </template>
 
 <script lang="ts" setup>
-import { useUserStore } from "~/composables/userStore"
-import { perfectFourthTypescale } from "~/src/lib/fonts/typescale"
+import { useUserStore } from "@/composables/userStore"
+import { perfectFourthTypescale } from "@@/src/lib/fonts/typescale"
 
 const props = defineProps<{
   fontLevel: number
