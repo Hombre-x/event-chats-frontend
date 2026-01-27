@@ -66,6 +66,9 @@ const emitSendMessage = (): void => {
     fill: $secondary-colour
     transition: fill 0.1s ease-in-out
 
+  &:hover
+    #message-input-button-plane
+      fill: $text-colour
 
   &:active
 
@@ -74,4 +77,6 @@ const emitSendMessage = (): void => {
 
     #message-input-button-plane
       fill: $text-colour
+
+
 </style>
