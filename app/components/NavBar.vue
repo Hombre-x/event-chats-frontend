@@ -2,10 +2,14 @@
   <nav>
     <ul>
       <li>
-        <NuxtLink to="/">Home</NuxtLink>
+        <SecondaryButton @click="() => console.log('Home clicked')">
+          <NuxtLink to="/">Home</NuxtLink>
+        </SecondaryButton>
       </li>
       <li>
-        <NuxtLink to="/about">About</NuxtLink>
+        <SecondaryButton @click="() => console.log('About clicked')">
+          <NuxtLink to="/about">About</NuxtLink>
+        </SecondaryButton>
       </li>
       <!-- TODO: Uncomment when login functionality is ready on the backend -->
       <!-- <li class="login-container">
@@ -32,7 +36,7 @@ nav
     margin: 0
     padding: 0
 
-    gap: 16px
+    gap: 10px
 
 
 .login-container
