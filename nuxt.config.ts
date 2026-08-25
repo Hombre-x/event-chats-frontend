@@ -9,7 +9,7 @@ export default defineNuxtConfig({
       link: [{ rel: "icon", type: "image/svg-xml", href: "/favicon.svg" }],
     },
   },
-  modules: ["@nuxtjs/google-fonts", "@nuxt/image", "@pinia/nuxt"],
+  modules: ["@nuxtjs/google-fonts", "@nuxt/image", "@pinia/nuxt", "@vueuse/nuxt"],
 
   // Fonts
   googleFonts: {
